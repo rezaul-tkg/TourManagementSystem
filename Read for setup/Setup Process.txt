@@ -1,0 +1,45 @@
+	
+	Tourism Management System : 
+
+
+1. Install XAMPP and run it.
+2. Start Apache and MySQL from XAMPP Control Panel.
+
+	[ N.B if Apache not START reason of port block then follow the following step ]
+	
+	(i)   click Apache config and click Apache[httpd.conf].
+	(ii)  search 'Listen 80' and replace it by 'Listen 8080'
+		and also search 'localhost:80' and replace it by 'localhost:8080'   [n.b ignore to write ' ']
+		finally save this text file by 'ctrl+s'
+
+	(iii) Now click Apache config and click Apache[httpd-ssl.conf]
+	(iv)  search '443' and replace all of 443 by '4443'	 [n.b ignore to write ' ']
+
+	(v)   Now click config from upper screen and click Service and Port Setting
+	(vi)  put main port=8080 and ssl port=4443
+
+	(vii) Now start Apache and MySQL
+
+3. goto Browser and write localhost:8080/phpmyadmin to URL.
+
+4. Click Import and then click browse and select [tourismdatabase.sql] from database folder then click Go.
+
+5. Copy Tourism_Project folder and paste to 
+		Local Disk(C) --> xampp --> htdocs
+
+6. Now goto Browser and write localhost:8080/Tourism_Project to URL.
+
+	Finally you done all of step ... Enjoy you tour site  :)
+
+
+Please Carefully Read the following topic:
+
+	You need login Admin Panel for controlling database by User Name and Password.
+
+	User Name : rezaul
+	Password  : rezaul
+	
+
+
+	
+
